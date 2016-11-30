@@ -41,7 +41,7 @@ function Mover() {
     var topspeed = 10;
   }
 
-  void update() {
+  function update() {
 
     acceleration = createVector.random2D();
     acceleration.mult(random(2));
@@ -51,14 +51,14 @@ function Mover() {
     position.add(velocity);
   }
 
-  void display(var r, var g, var b) {
+  function display(var r, var g, var b) {
     noStroke();
     fill(r, g, b);
     stroke(r, g, b);
     vertex(position.x, position.y);
   }
 
-  void checkEdges() {
+  function checkEdges() {
     if ((position.x > width-100) || (position.x < 100)) {
       velocity.x = velocity.x * -1;
     }
