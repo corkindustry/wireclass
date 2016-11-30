@@ -51,7 +51,7 @@ function Mover() {
     position.add(velocity);
   }
 
-  function display(var r, var g, var b) {
+  function display(r, g, b) {
     noStroke();
     fill(r, g, b);
     stroke(r, g, b);
