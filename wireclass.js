@@ -35,9 +35,7 @@ endShape(CLOSE);
   }
   endShape(CLOSE);
 
-function Mover {
-
-  Mover() {
+function Mover() {
     position = createVector(width/2, height/2);
     velocity = createVector(0, 0);
     var topspeed = 10;
@@ -56,8 +54,6 @@ function Mover {
   void display(var r, var g, var b) {
     noStroke();
     fill(r, g, b);
-    //ellipse(position.x, position.y, 10, 10);
-    //noFill();
     stroke(r, g, b);
     vertex(position.x, position.y);
   }
@@ -70,6 +66,6 @@ function Mover {
       velocity.y = velocity.y * -1;
     }
   }
-}
+
 
 }
