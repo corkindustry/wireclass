@@ -5,7 +5,7 @@ var n = [nlen];
 
 
 function setup() {
-  createCanvas(640, 640, [WEBGL]);
+  var canvas = createCanvas(640, 640, [WEBGL]);
   strokeWeight(2);
   //frameRate(60);
   for(var i = 1; i < mlen; i++) {
@@ -15,7 +15,9 @@ function setup() {
   for(i = 1; i < nlen; i++) {
     m[i] = new Mover();
   }
-  
+
+  canvas.parent('wireclass');
+
 }
 
 function draw() {

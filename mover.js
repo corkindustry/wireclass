@@ -14,7 +14,7 @@ function Mover() {
   this.display = function(r, g, b) {
     noStroke();
     fill(r, g, b);
-    stroke(r, g, b  );
+    stroke(r, g, b);
     ellipse(this.position.x, this.position.y, 8, 8)
     noFill();
     vertex(this.position.x, this.position.y);
